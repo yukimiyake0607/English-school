@@ -49,10 +49,66 @@ img {
 }
 
 /* --------------------------
-BASE
+header
 -------------------------- */
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .site-title {
+  margin-left: 50px;
+}
+
+.header .site-title a img {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header .header-nav-wrapper .header-nav {
+  display: none;
+}
+
+.header .burger-btn {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #FF2A2A;
+  position: relative;
+}
+
+.header .burger-btn .bars .bar {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 25px;
+}
+
+.header .burger-btn .bars .bar-top {
+  top: 36px;
+}
+
+.header .burger-btn .bars .bar-mid {
+  top: 50px;
+}
+
+.header .burger-btn .bars .bar-bottom {
+  top: 64px;
+}
+
 /* --------------------------
-BASE
+fv
 -------------------------- */
 /* --------------------------
 BASE

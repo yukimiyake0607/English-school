@@ -42,15 +42,62 @@ img {
 
 
 /* --------------------------
-BASE
+header
 -------------------------- */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .site-title {
+        margin-left: 50px;
+        a {
+            img {
+                width: 100px;
+                object-fit: cover;
+            }
+        }
+    }
+    .header-nav-wrapper {
+        .header-nav {
+            display: none;
+        }
+    }
+    .burger-btn {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: #FF2A2A;
+        position: relative;
+        .bars {
+            .bar {
+                display: block;
+                width: 50px;
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
+                left: 25px;
+            }
+            .bar-top {
+                top: 36px;
+            }
+            .bar-mid {
+                top: 50px;
+            }
+            .bar-bottom {
+                top: 64px;
+            }
+        }
+    }
+}
 
 
 
 
 /* --------------------------
-BASE
+fv
 -------------------------- */
+
 
 
 
