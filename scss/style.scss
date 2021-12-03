@@ -300,104 +300,126 @@ reason
 voice
 -------------------------- */
 #voice {
-    
-    .l-student-voice-wrapper {
-        margin-bottom: 79px;
-        &:last-of-type {
-            margin-bottom: 0;
+    .section-inner {
+        .balloon {
+            animation-name: balloon;
+            animation-delay: 0s;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
         }
-        &:nth-child(2) {
-            .student-voice {
-                flex-direction: row-reverse;
+        .l-student-voice-wrapper {
+            margin-bottom: 79px;
+            opacity: 0;
+            &:last-of-type {
+                margin-bottom: 0;
             }
-        }
-        .student-voice {
-            display: flex;
-            .student {
-                .img-wrapper {
-                    margin-bottom: 10px;
-                    img {
-                        width: 120px;
-                        height: 120px;
-                        border-radius: 60px;
-                        background-color: #CCCCCC;
-                        object-fit: cover;
+            &:nth-child(2) {
+                .student-voice {
+                    flex-direction: row-reverse;
+                }
+            }
+            .student-voice {
+                display: flex;
+                .student {
+                    .img-wrapper {
+                        margin-bottom: 10px;
+                        img {
+                            width: 120px;
+                            height: 120px;
+                            border-radius: 60px;
+                            background-color: #CCCCCC;
+                            object-fit: cover;
+                        }
+                    }
+                    .student-name {
+                        text-align: center;
+                        font-size: 1.2rem;
                     }
                 }
-                .student-name {
-                    text-align: center;
-                    font-size: 1.2rem;
+                .student-text-wrapper {
+                    background-color: #E9F1FB;
+                    width: 60%;
+                    border-radius: 15px;
+                    padding: 20px;
+                    position: relative;
+                    margin-left: 25px;
+                    display: flex;
+                    justify-content: center;
+                    p {
+                        line-height: 1.6875;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 60%;
+                        left: 0;
+                        margin-left: -30px;
+                        border: 15px solid transparent;
+                        border-right: 15px solid #E9F1FB;
+                    }
                 }
             }
-            .student-text-wrapper {
-                background-color: #E9F1FB;
-                width: 60%;
-                border-radius: 15px;
-                padding: 20px;
-                position: relative;
-                margin-left: 25px;
+        }
+        .r-student-voice-wrapper {
+            margin-bottom: 79px;
+            opacity: 0;
+            .student-voice {
                 display: flex;
-                justify-content: center;
-                p {
-                    line-height: 1.6875;
+                align-items: center;
+                flex-direction: row-reverse;
+                .student {
+                    margin-left: 25px;
+                    .img-wrapper {
+                        margin-bottom: 10px;
+                        img {
+                            width: 120px;
+                            height: 120px;
+                            border-radius: 60px;
+                            background-color: #CCCCCC;
+                            object-fit: cover;
+                        }
+                    }
+                    .student-name {
+                        text-align: center;
+                        font-size: 1.2rem;
+                    }
                 }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 60%;
-                    left: 0;
-                    margin-left: -30px;
-                    border: 15px solid transparent;
-                    border-right: 15px solid #E9F1FB;
+                .student-text-wrapper {
+                    background-color: #E9F1FB;
+                    padding: 20px;
+                    border-radius: 15px;
+                    width: 60%;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 60%;
+                        right: 0;
+                        border: 15px solid transparent;
+                        border-left: 15px solid #E9F1FB;
+                        margin-right: -30px;
+                    }
+                    p {
+                        line-height: 1.6875;
+                    }
                 }
             }
         }
     }
-    .r-student-voice-wrapper {
-        margin-bottom: 79px;
-        .student-voice {
-            display: flex;
-            align-items: center;
-            flex-direction: row-reverse;
-            .student {
-                margin-left: 25px;
-                .img-wrapper {
-                    margin-bottom: 10px;
-                    img {
-                        width: 120px;
-                        height: 120px;
-                        border-radius: 60px;
-                        background-color: #CCCCCC;
-                        object-fit: cover;
-                    }
-                }
-                .student-name {
-                    text-align: center;
-                    font-size: 1.2rem;
-                }
-            }
-            .student-text-wrapper {
-                background-color: #E9F1FB;
-                padding: 20px;
-                border-radius: 15px;
-                width: 60%;
-                display: flex;
-                justify-content: center;
-                position: relative;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 60%;
-                    right: 0;
-                    border: 15px solid transparent;
-                    border-left: 15px solid #E9F1FB;
-                    margin-right: -30px;
-                }
-                p {
-                    line-height: 1.6875;
-                }
-            }
-        }
+}
+
+@keyframes balloon {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
 

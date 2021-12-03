@@ -402,32 +402,48 @@ reason
 /* --------------------------
 voice
 -------------------------- */
-#voice .l-student-voice-wrapper {
-  margin-bottom: 79px;
+#voice .section-inner .balloon {
+  -webkit-animation-name: balloon;
+          animation-name: balloon;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 
-#voice .l-student-voice-wrapper:last-of-type {
+#voice .section-inner .l-student-voice-wrapper {
+  margin-bottom: 79px;
+  opacity: 0;
+}
+
+#voice .section-inner .l-student-voice-wrapper:last-of-type {
   margin-bottom: 0;
 }
 
-#voice .l-student-voice-wrapper:nth-child(2) .student-voice {
+#voice .section-inner .l-student-voice-wrapper:nth-child(2) .student-voice {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-#voice .l-student-voice-wrapper .student-voice {
+#voice .section-inner .l-student-voice-wrapper .student-voice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#voice .l-student-voice-wrapper .student-voice .student .img-wrapper {
+#voice .section-inner .l-student-voice-wrapper .student-voice .student .img-wrapper {
   margin-bottom: 10px;
 }
 
-#voice .l-student-voice-wrapper .student-voice .student .img-wrapper img {
+#voice .section-inner .l-student-voice-wrapper .student-voice .student .img-wrapper img {
   width: 120px;
   height: 120px;
   border-radius: 60px;
@@ -436,12 +452,12 @@ voice
      object-fit: cover;
 }
 
-#voice .l-student-voice-wrapper .student-voice .student .student-name {
+#voice .section-inner .l-student-voice-wrapper .student-voice .student .student-name {
   text-align: center;
   font-size: 1.2rem;
 }
 
-#voice .l-student-voice-wrapper .student-voice .student-text-wrapper {
+#voice .section-inner .l-student-voice-wrapper .student-voice .student-text-wrapper {
   background-color: #E9F1FB;
   width: 60%;
   border-radius: 15px;
@@ -456,11 +472,11 @@ voice
           justify-content: center;
 }
 
-#voice .l-student-voice-wrapper .student-voice .student-text-wrapper p {
+#voice .section-inner .l-student-voice-wrapper .student-voice .student-text-wrapper p {
   line-height: 1.6875;
 }
 
-#voice .l-student-voice-wrapper .student-voice .student-text-wrapper::before {
+#voice .section-inner .l-student-voice-wrapper .student-voice .student-text-wrapper::before {
   content: "";
   position: absolute;
   top: 60%;
@@ -470,11 +486,12 @@ voice
   border-right: 15px solid #E9F1FB;
 }
 
-#voice .r-student-voice-wrapper {
+#voice .section-inner .r-student-voice-wrapper {
   margin-bottom: 79px;
+  opacity: 0;
 }
 
-#voice .r-student-voice-wrapper .student-voice {
+#voice .section-inner .r-student-voice-wrapper .student-voice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,15 +504,15 @@ voice
           flex-direction: row-reverse;
 }
 
-#voice .r-student-voice-wrapper .student-voice .student {
+#voice .section-inner .r-student-voice-wrapper .student-voice .student {
   margin-left: 25px;
 }
 
-#voice .r-student-voice-wrapper .student-voice .student .img-wrapper {
+#voice .section-inner .r-student-voice-wrapper .student-voice .student .img-wrapper {
   margin-bottom: 10px;
 }
 
-#voice .r-student-voice-wrapper .student-voice .student .img-wrapper img {
+#voice .section-inner .r-student-voice-wrapper .student-voice .student .img-wrapper img {
   width: 120px;
   height: 120px;
   border-radius: 60px;
@@ -504,12 +521,12 @@ voice
      object-fit: cover;
 }
 
-#voice .r-student-voice-wrapper .student-voice .student .student-name {
+#voice .section-inner .r-student-voice-wrapper .student-voice .student .student-name {
   text-align: center;
   font-size: 1.2rem;
 }
 
-#voice .r-student-voice-wrapper .student-voice .student-text-wrapper {
+#voice .section-inner .r-student-voice-wrapper .student-voice .student-text-wrapper {
   background-color: #E9F1FB;
   padding: 20px;
   border-radius: 15px;
@@ -523,7 +540,7 @@ voice
   position: relative;
 }
 
-#voice .r-student-voice-wrapper .student-voice .student-text-wrapper::before {
+#voice .section-inner .r-student-voice-wrapper .student-voice .student-text-wrapper::before {
   content: "";
   position: absolute;
   top: 60%;
@@ -533,8 +550,34 @@ voice
   margin-right: -30px;
 }
 
-#voice .r-student-voice-wrapper .student-voice .student-text-wrapper p {
+#voice .section-inner .r-student-voice-wrapper .student-voice .student-text-wrapper p {
   line-height: 1.6875;
+}
+
+@-webkit-keyframes balloon {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes balloon {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* --------------------------
