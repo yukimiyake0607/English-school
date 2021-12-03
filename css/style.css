@@ -2,6 +2,7 @@
 /* --------------------------
 BASE
 -------------------------- */
+@import url(./_media.scss);
 html {
   font-size: 62.5%;
 }
@@ -731,4 +732,8 @@ footer
   text-align: center;
   display: block;
 }
+
+/* --------------------------
+import
+-------------------------- */
 /*# sourceMappingURL=style.css.map */
