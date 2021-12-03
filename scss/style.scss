@@ -227,6 +227,7 @@ reason
             display: flex;
             align-items: center;
             justify-content: center;
+            opacity: 0;
             img {
                 height: 60px;
                 width: 87px;
@@ -248,7 +249,6 @@ reason
                 border-bottom-left-radius: 20px;
                 border-top-right-radius: 0;
                 border-bottom-right-radius: 0;
-                margin: 40px 0 0 auto;
                 img {
                     height: 60px;
                     width: 51px;
@@ -256,6 +256,42 @@ reason
                 }
             }
         }
+        .slide-left {
+            animation-name: slide-left;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        .slide-right {
+            animation-name: slide-right;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(100%);
     }
 }
 
@@ -264,6 +300,7 @@ reason
 voice
 -------------------------- */
 #voice {
+    
     .l-student-voice-wrapper {
         margin-bottom: 79px;
         &:last-of-type {
@@ -441,6 +478,10 @@ apply
         font-size: 2.8rem;
         font-weight: bold;
         display: block;
+        &:hover {
+            opacity: .3;
+            transition: .3s;
+        }
     }
 
 }
@@ -453,9 +494,13 @@ footer
 .footer {
     background-color: #E8E8E8;
     padding: 60px 4vw 20px;
+    a:hover {
+        opacity: 0.3;
+        transition: .3s;
+    }
     .footer-inner {
         max-width: 870px;
-        margin: 0 auto;
+        margin: 0 auto 60px;
         display: flex;
         justify-content: space-between;
         align-items: start;
