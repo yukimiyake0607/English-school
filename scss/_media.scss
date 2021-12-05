@@ -116,6 +116,77 @@
         /* --------------------------
         voice
         -------------------------- */
-        
+        #voice {
+            .section-inner {
+                .l-student-voice-wrapper {
+                    margin-bottom: 40px;
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                    .student-voice {
+                        display: block;
+                        .student {
+                            .img-wrapper {
+                                text-align: center;
+                            }
+                        }
+                        .student-text-wrapper {
+                            width: calc(100% - 32px);
+                            margin: 30px auto 0;
+                            position: relative;
+                            &::before {
+                                content: none;
+                            }
+                            p::before {
+                                content: "";
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                top: -15px;
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-right: 15px solid transparent;
+                                border-bottom: 15px solid #E9F1FB;
+                                border-left: 15px solid transparent;
+                            }
+                        }
+                    }
+                }
+                .r-student-voice-wrapper {
+                    margin-bottom: 40px;
+                    .student-voice {
+                        display: block;
+                        .student {
+                            margin-left: 0;
+                            .img-wrapper {
+                                text-align: center;
+                            }
+                        }
+                        .student-text-wrapper {
+                            width: calc(100% - 32px);
+                            margin: 30px auto 0;
+                            position: relative;
+                            &::before {
+                                content: none;
+                            }
+                            p::before {
+                                content: "";
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                top: -15px;
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border-right: 15px solid transparent;
+                                border-bottom: 15px solid #E9F1FB;
+                                border-left: 15px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

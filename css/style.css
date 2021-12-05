@@ -869,5 +869,73 @@ import
       opacity: 1;
     }
   }
+  main #voice .section-inner .l-student-voice-wrapper {
+    margin-bottom: 40px;
+  }
+  main #voice .section-inner .l-student-voice-wrapper:last-of-type {
+    margin-bottom: 0;
+  }
+  main #voice .section-inner .l-student-voice-wrapper .student-voice {
+    display: block;
+  }
+  main #voice .section-inner .l-student-voice-wrapper .student-voice .student .img-wrapper {
+    text-align: center;
+  }
+  main #voice .section-inner .l-student-voice-wrapper .student-voice .student-text-wrapper {
+    width: calc(100% - 32px);
+    margin: 30px auto 0;
+    position: relative;
+  }
+  main #voice .section-inner .l-student-voice-wrapper .student-voice .student-text-wrapper::before {
+    content: none;
+  }
+  main #voice .section-inner .l-student-voice-wrapper .student-voice .student-text-wrapper p::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -15px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #E9F1FB;
+    border-left: 15px solid transparent;
+  }
+  main #voice .section-inner .r-student-voice-wrapper {
+    margin-bottom: 40px;
+  }
+  main #voice .section-inner .r-student-voice-wrapper .student-voice {
+    display: block;
+  }
+  main #voice .section-inner .r-student-voice-wrapper .student-voice .student {
+    margin-left: 0;
+  }
+  main #voice .section-inner .r-student-voice-wrapper .student-voice .student .img-wrapper {
+    text-align: center;
+  }
+  main #voice .section-inner .r-student-voice-wrapper .student-voice .student-text-wrapper {
+    width: calc(100% - 32px);
+    margin: 30px auto 0;
+    position: relative;
+  }
+  main #voice .section-inner .r-student-voice-wrapper .student-voice .student-text-wrapper::before {
+    content: none;
+  }
+  main #voice .section-inner .r-student-voice-wrapper .student-voice .student-text-wrapper p::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -15px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #E9F1FB;
+    border-left: 15px solid transparent;
+  }
 }
 /*# sourceMappingURL=style.css.map */
