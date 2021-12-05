@@ -1,28 +1,121 @@
-/* --------------------------
-base 
--------------------------- */
+@media screen and (max-width: 900px) {
+    /* --------------------------
+    base 
+    -------------------------- */
+    .section-wrapper {
+        padding: 80px 5%;
+        &:first-of-type {
+            padding-bottom: 0;
+        }
+        &:nth-of-type(3) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .section-title {
+            font-size: 2.8rem;
+        }
+        .under-bar {
+            width: 80px;
+            margin-bottom: 40px;
+        }
+    }
 
-/* --------------------------
-header
--------------------------- */
+    /* --------------------------
+    header
+    -------------------------- */
+    .header {
+        .site-title {
+            margin-left: 25px;
+        }
+        .burger-btn {
+            width: 75px;
+            height: 75px;
+            .bars {
+                .bar {
+                    width: 35px;
+                    left: 20px;
+                }
+                .bar-top {
+                    top: 26px;
+                }
+                .bar-mid {
+                    top: 37px;
+                }
+                .bar-bottom {
+                    top: 48px;
+                }
+            }
+        }
+    }
 
-.header {
-    .burger-btn {
-        width: 75px;
-        height: 75px;
+    main {
+        /* --------------------------
+        fv
+        -------------------------- */
+        .fv {
+            height: 490px;
+            .main-copy {
+                top: 310px;
+                p {
+                    font-size: 2.8rem;
+                }
+                .link-btn {
+                    width: 343px;
+                    margin-top: 10px;
+                }
+            }
+            .main-visual {
+                width: 100%;
+                .img-list {
+                    .img-item {
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        /* --------------------------
+        reason 
+        -------------------------- */
+        #reason {
+            .reason-content-wrapper {
+                padding: 40px 0;
+                .reason-content {
+                    width: calc(100% - 16px);
+                    padding: 24px 20px;
+                    box-sizing: border-box;
+                    .text-wrapper {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+            @keyframes slide-left {
+                0% {
+                    transform: translateX(-100%);
+                }
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slide-right {
+                0% {
+                    transform: translateX(100%);
+                }
+                100% {
+                    transform: translateX(16px);
+                    opacity: 1;
+                }
+            }
+        }
+
+        /* --------------------------
+        voice
+        -------------------------- */
+        
     }
 }
-
-/* --------------------------
-fv
--------------------------- */
-
-
-
-/* --------------------------
-voice
--------------------------- */
-
-/* --------------------------
-voice
--------------------------- */
