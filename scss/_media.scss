@@ -3,7 +3,7 @@
     base 
     -------------------------- */
     .section-wrapper {
-        padding: 80px 5%;
+        padding: 80px 4%;
         &:first-of-type {
             padding-bottom: 0;
         }
@@ -131,8 +131,9 @@
                             }
                         }
                         .student-text-wrapper {
-                            width: calc(100% - 32px);
+                            width: 100%;
                             margin: 30px auto 0;
+                            box-sizing: border-box;
                             position: relative;
                             &::before {
                                 content: none;
@@ -164,9 +165,10 @@
                             }
                         }
                         .student-text-wrapper {
-                            width: calc(100% - 32px);
+                            width: 100%;
                             margin: 30px auto 0;
                             position: relative;
+                            box-sizing: border-box;
                             &::before {
                                 content: none;
                             }
@@ -184,6 +186,72 @@
                                 border-left: 15px solid transparent;
                             }
                         }
+                    }
+                }
+            }
+        }
+
+
+
+        /* --------------------------
+        summary
+        -------------------------- */
+        #summary {
+            .summary-list {
+                display: block;
+                padding: 0 4%;
+                .summary-item {
+                    width: 100%;
+                    margin: 0 auto 32px;
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+
+
+        /* --------------------------
+        apply
+        -------------------------- */
+        #apply {
+            padding: 80px 4%;
+            .apply-title {
+                font-size: 2.4rem;
+            }
+            .apply-subtitle {
+                font-size: 1.6rem;
+            }
+            .apply-btn {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+
+    /* --------------------------
+    footer
+    -------------------------- */
+    .footer {
+        padding-left: 4%;
+        padding-right: 4%;
+        .footer-inner {
+            width: 100%;
+            margin: 0;
+            flex-wrap: wrap;
+            .footer-content {
+                width: 50%;
+                .title {
+                    font-size: 1.5rem;
+                }
+                .footer-list {
+                    font-size: 1.2rem;
+                    &:first-of-type {
+                        margin-bottom: 30px;
+                    }
+                    &:nth-of-type(2) {
+                        margin-bottom: 30px;
                     }
                 }
             }

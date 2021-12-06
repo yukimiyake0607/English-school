@@ -24,7 +24,7 @@ img {
         padding: 60px 0;
     }
     &:last-of-type {
-        padding-bottom: 135px;
+        padding-bottom: 120px;
     }
     .section-inner {
         max-width: 870px;
@@ -73,6 +73,10 @@ header
         height: 100px;
         background-color: #FF2A2A;
         position: relative;
+        &:hover {
+            opacity: .3;
+            transition: .3s;
+        }
         .bars {
             .bar {
                 display: block;
